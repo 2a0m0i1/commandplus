@@ -49,6 +49,7 @@ class Quiz3ViewController: UIViewController {
         sentakuQuiz()
     }
     
+    
     func sentakuQuiz() {
         sentenceTextView.text = quizArray[0][0] as? String
         
@@ -58,17 +59,14 @@ class Quiz3ViewController: UIViewController {
         sentakuButton3.setTitle(quizArray[0][3] as? String, for: .normal)
     }
     
-    func performSegueToResult() {
-        performSegue(withIdentifier: "toResultView", sender: nil)
-    }
-    
-    @IBAction func Answer(sender: UIButton){
+    @IBAction func choiceAnswer(sender: UIButton){
         if quizArray[0][4] as! Int == sender.tag{
+            //正解数を増やす
             correctAnswer+=1
         }
         
         quizArray.remove(at: 0)
-        
+        //解いた問題数の合計が予め設定していた問題数に達したら結果画面へ
         if quizArray.count == 0{
             performSegueToResult()
         }else{
@@ -76,14 +74,27 @@ class Quiz3ViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func performSegueToResult() {
+        performSegue(withIdentifier: "toResultView", sender: nil)
     }
-    */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toResultView") {
+            
+            let resultView = segue.destination as! ResultViewController
+            resultView.correctAnswer = self.correctAnswer
+        }
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

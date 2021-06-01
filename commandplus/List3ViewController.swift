@@ -1,18 +1,17 @@
 //
-//  ListViewController.swift
+//  List3ViewController.swift
 //  commandplus
 //
-//  Created by 阿部亜未 on 2021/05/28.
+//  Created by 阿部亜未 on 2021/06/01.
 //
 
 import UIKit
- 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
+
+class List3ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+
     @IBOutlet weak var TableView: UITableView!
-    
     //配列を設定
-    let ippan = ["切り取り", "コピー", "ペースト", "取り消し", "全てを選択","項目を検索","印刷","保存","新しいタブ","ウィンドウを閉じる","Appを強制終了","Spotlightの表示・非表示","Appをフルスクリーン表示","プレビュー","Appの切り替え","スクリーンショット・画面録画","新しいフォルダ"]
+    let syorui = ["太字", "斜体", "Webリンク追加", "下線", "左揃え","右揃え","中央揃え","「フォント」ウインドウの表示・非表示","誤りのある単語を検索","1ページ分上にスクロール","1ページ分下にスクロール","書類の先頭までスクロール","書類の末尾までスクロール","書式設定をクリップボードにコピー","コピーしたスタイルを選択した項目に適用","ペーストして書式スタイルを合わせる","書類設定を選択するためのウインドウを表示","「別名で保存」ダイアログを表示"]
 
     
 
@@ -27,7 +26,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ippan.count
+        return syorui.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,7 +34,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "samplecell", for: indexPath)
         
         // セルに表示する値を設定する
-        cell.textLabel!.text = ippan[indexPath.row]
+        cell.textLabel!.text = syorui[indexPath.row]
         
         return cell
     }

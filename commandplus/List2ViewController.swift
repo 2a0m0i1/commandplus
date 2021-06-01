@@ -1,18 +1,18 @@
 //
-//  ListViewController.swift
+//  List2ViewController.swift
 //  commandplus
 //
-//  Created by 阿部亜未 on 2021/05/28.
+//  Created by 阿部亜未 on 2021/06/01.
 //
 
 import UIKit
- 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
+
+class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+
     @IBOutlet weak var TableView: UITableView!
     
     //配列を設定
-    let ippan = ["切り取り", "コピー", "ペースト", "取り消し", "全てを選択","項目を検索","印刷","保存","新しいタブ","ウィンドウを閉じる","Appを強制終了","Spotlightの表示・非表示","Appをフルスクリーン表示","プレビュー","Appの切り替え","スクリーンショット・画面録画","新しいフォルダ"]
+    let shisutemu = ["ディスプレイをスリープ", "強制的に再起動", "再起動", "システム終了", "画面をロック"]
 
     
 
@@ -27,7 +27,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ippan.count
+        return shisutemu.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,7 +35,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "samplecell", for: indexPath)
         
         // セルに表示する値を設定する
-        cell.textLabel!.text = ippan[indexPath.row]
+        cell.textLabel!.text = shisutemu[indexPath.row]
         
         return cell
     }

@@ -21,10 +21,13 @@ class QuizViewController: UIViewController {
     @IBOutlet var sentakuButton2: UIButton!
     @IBOutlet var sentakuButton3: UIButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = "一般的なショートカット"
+        numberLabel.text = ""
         
         quizArray.append(["選択した項目を切り取って、\nクリップボードにコピーする時の\nショートカットキーは？", "⌘ + D", "⌘ + X", "⌘ + T", 2])
         quizArray.append(["コピーをする時の\nショートカットキーは？", "⌘ + Z", "⌘ + K", "⌘ + C", 3])
@@ -49,6 +52,8 @@ class QuizViewController: UIViewController {
         sentakuQuiz()
     }
     
+    
+    
     func sentakuQuiz() {
         sentenceTextView.text = quizArray[0][0] as? String
         
@@ -58,21 +63,30 @@ class QuizViewController: UIViewController {
         sentakuButton3.setTitle(quizArray[0][3] as? String, for: .normal)
     }
     
-    func performSegueToResult() {
-        performSegue(withIdentifier: "toResultView", sender: nil)
-    }
-    
-    @IBAction func Answer(sender: UIButton){
+    @IBAction func choiceAnswer(sender: UIButton){
         if quizArray[0][4] as! Int == sender.tag{
+            //正解数を増やす
             correctAnswer+=1
         }
         
         quizArray.remove(at: 0)
-        
+        //解いた問題数の合計が予め設定していた問題数に達したら結果画面へ
         if quizArray.count == 0{
             performSegueToResult()
         }else{
             sentakuQuiz()
+        }
+    }
+    
+    func performSegueToResult() {
+        performSegue(withIdentifier: "toResultView", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toResultView") {
+            
+            let resultView = segue.destination as! ResultViewController
+            resultView.correctAnswer = self.correctAnswer
         }
     }
     
