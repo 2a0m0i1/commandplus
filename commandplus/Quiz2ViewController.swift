@@ -12,7 +12,7 @@ class Quiz2ViewController: UIViewController {
     var quizArray = [[Any]]()
     
     var correctAnswer: Int = 0
-    
+
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var numberLabel: UILabel!
     @IBOutlet var sentenceTextView: UITextView!
@@ -71,16 +71,5 @@ class Quiz2ViewController: UIViewController {
             resultView.correctAnswer = self.correctAnswer
         }
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

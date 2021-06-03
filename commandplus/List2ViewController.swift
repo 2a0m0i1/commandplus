@@ -8,19 +8,19 @@
 import UIKit
 
 class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-
+    
     @IBOutlet weak var TableView: UITableView!
     
     //配列を設定
     let shisutemu = ["ディスプレイをスリープ", "強制的に再起動", "再起動", "システム終了", "画面をロック"]
-
     
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
- 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,5 +40,13 @@ class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
- 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // セルの選択を解除
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // 別の画面に遷移
+        performSegue(withIdentifier: "toNext", sender: nil)
+    }
+    
 }
