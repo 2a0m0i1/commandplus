@@ -14,9 +14,6 @@
 		E07C13332666007D00A2C34A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C13322666007D00A2C34A /* ResultViewController.swift */; };
 		E07C1335266639A000A2C34A /* List2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C1334266639A000A2C34A /* List2ViewController.swift */; };
 		E07C1337266639B500A2C34A /* List3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C1336266639B500A2C34A /* List3ViewController.swift */; };
-		E07C1339266666C300A2C34A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E07C1338266666C300A2C34A /* icon.png */; };
-		E07C133A266666C300A2C34A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E07C1338266666C300A2C34A /* icon.png */; };
-		E07C133B266666C300A2C34A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E07C1338266666C300A2C34A /* icon.png */; };
 		E07C134226666EDA00A2C34A /* SetsumeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */; };
 		E07C134326666EDA00A2C34A /* SetsumeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */; };
 		E07C134426666EDA00A2C34A /* SetsumeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */; };
@@ -58,7 +55,6 @@
 		E07C13322666007D00A2C34A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		E07C1334266639A000A2C34A /* List2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List2ViewController.swift; sourceTree = "<group>"; };
 		E07C1336266639B500A2C34A /* List3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List3ViewController.swift; sourceTree = "<group>"; };
-		E07C1338266666C300A2C34A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsumeiViewController.swift; sourceTree = "<group>"; };
 		E07D9EC12659FBB900F4485A /* commandplus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = commandplus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07D9EC42659FBB900F4485A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,7 +123,6 @@
 		E07D9EC32659FBB900F4485A /* commandplus */ = {
 			isa = PBXGroup;
 			children = (
-				E07C1338266666C300A2C34A /* icon.png */,
 				E07D9ED22659FBBB00F4485A /* Info.plist */,
 				E07D9EC42659FBB900F4485A /* AppDelegate.swift */,
 				E07D9EC62659FBB900F4485A /* SceneDelegate.swift */,
@@ -271,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07C1339266666C300A2C34A /* icon.png in Resources */,
 				E07D9ED12659FBBB00F4485A /* LaunchScreen.storyboard in Resources */,
 				E07D9ECE2659FBBB00F4485A /* Assets.xcassets in Resources */,
 				E07D9ECC2659FBB900F4485A /* Main.storyboard in Resources */,
@@ -282,7 +276,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07C133A266666C300A2C34A /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07C133B266666C300A2C34A /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = commandplus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,7 +497,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "L13-Abe-Develop";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -516,7 +508,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = commandplus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -527,7 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "L13-Abe-Distribution";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
