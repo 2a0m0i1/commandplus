@@ -11,10 +11,14 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var TableView: UITableView!
     
+    
     //配列を設定
     let ippan = ["切り取り", "コピー", "ペースト", "取り消し", "全てを選択","項目を検索","印刷","保存","新しいタブ","ウィンドウを閉じる","Appを強制終了","Spotlightの表示・非表示","Appをフルスクリーン表示","プレビュー","Appの切り替え","スクリーンショット・画面録画","新しいフォルダ"]
     
     
+    @IBAction func byPerformSegue(_ sender: Any) {
+        self.performSegue(withIdentifier: "toSegueViewController", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +37,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "samplecell", for: indexPath)
-        
         // セルに表示する値を設定する
         cell.textLabel!.text = ippan[indexPath.row]
         
@@ -49,6 +52,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         performSegue(withIdentifier: "toNext", sender: nil)
         
     }
+    
+
+
     
     
 }

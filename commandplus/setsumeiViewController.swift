@@ -8,7 +8,7 @@
 import UIKit
 
 class SetsumeiViewController: UIViewController {
-
+    var correct = 0
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var setsumeiLabel: UILabel!

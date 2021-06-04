@@ -13,9 +13,12 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         kekkaLabel.text = "\(correctAnswer)"
-
+        
+    }
+    @IBAction func toTopButtonAction(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
     
 }

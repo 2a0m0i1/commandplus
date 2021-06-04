@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		E02729A326612ADD00FA6EA1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02729A226612ADD00FA6EA1 /* ListViewController.swift */; };
 		E02729A72661324100FA6EA1 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02729A62661324100FA6EA1 /* QuizViewController.swift */; };
+		E052E011266A59CF0045FFBB /* ippan.csv in Resources */ = {isa = PBXBuildFile; fileRef = E052E010266A59CF0045FFBB /* ippan.csv */; };
+		E052E01A266A7DCE0045FFBB /* maru.png in Resources */ = {isa = PBXBuildFile; fileRef = E052E018266A7DCE0045FFBB /* maru.png */; };
+		E052E01B266A7DCE0045FFBB /* batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = E052E019266A7DCE0045FFBB /* batsu.png */; };
+		E052E021266A98E10045FFBB /* shisutemu.csv in Resources */ = {isa = PBXBuildFile; fileRef = E052E020266A98E10045FFBB /* shisutemu.csv */; };
+		E052E023266A98FD0045FFBB /* syorui.csv in Resources */ = {isa = PBXBuildFile; fileRef = E052E022266A98FD0045FFBB /* syorui.csv */; };
 		E07C132F2664CC4700A2C34A /* Quiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */; };
 		E07C13312664CC5A00A2C34A /* Quiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */; };
 		E07C13332666007D00A2C34A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C13322666007D00A2C34A /* ResultViewController.swift */; };
@@ -50,6 +55,11 @@
 /* Begin PBXFileReference section */
 		E02729A226612ADD00FA6EA1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E02729A62661324100FA6EA1 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		E052E010266A59CF0045FFBB /* ippan.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = ippan.csv; sourceTree = "<group>"; };
+		E052E018266A7DCE0045FFBB /* maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru.png; sourceTree = "<group>"; };
+		E052E019266A7DCE0045FFBB /* batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batsu.png; sourceTree = "<group>"; };
+		E052E020266A98E10045FFBB /* shisutemu.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = shisutemu.csv; sourceTree = "<group>"; };
+		E052E022266A98FD0045FFBB /* syorui.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = syorui.csv; sourceTree = "<group>"; };
 		E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz2ViewController.swift; sourceTree = "<group>"; };
 		E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz3ViewController.swift; sourceTree = "<group>"; };
 		E07C13322666007D00A2C34A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E052E017266A7DCE0045FFBB /* hantei */ = {
+			isa = PBXGroup;
+			children = (
+				E052E018266A7DCE0045FFBB /* maru.png */,
+				E052E019266A7DCE0045FFBB /* batsu.png */,
+			);
+			path = hantei;
+			sourceTree = SOURCE_ROOT;
+		};
 		E07D9EB82659FBB900F4485A = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +160,10 @@
 				E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */,
 				E07C13322666007D00A2C34A /* ResultViewController.swift */,
 				E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */,
+				E052E017266A7DCE0045FFBB /* hantei */,
+				E052E010266A59CF0045FFBB /* ippan.csv */,
+				E052E020266A98E10045FFBB /* shisutemu.csv */,
+				E052E022266A98FD0045FFBB /* syorui.csv */,
 			);
 			path = commandplus;
 			sourceTree = "<group>";
@@ -267,8 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E07D9ED12659FBBB00F4485A /* LaunchScreen.storyboard in Resources */,
+				E052E01A266A7DCE0045FFBB /* maru.png in Resources */,
+				E052E021266A98E10045FFBB /* shisutemu.csv in Resources */,
 				E07D9ECE2659FBBB00F4485A /* Assets.xcassets in Resources */,
+				E052E01B266A7DCE0045FFBB /* batsu.png in Resources */,
 				E07D9ECC2659FBB900F4485A /* Main.storyboard in Resources */,
+				E052E011266A59CF0045FFBB /* ippan.csv in Resources */,
+				E052E023266A98FD0045FFBB /* syorui.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

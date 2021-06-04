@@ -30,9 +30,6 @@ class TopViewController: UIViewController {
     @IBAction func tapButton5(){
         
     }
-    
-    @IBAction func back(segue: UIStoryboardSegue){
-        
-    }
+
     
 }

@@ -451,7 +451,7 @@
             <objects>
                 <viewController id="Gs8-ah-JF9" customClass="ResultViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tMp-iZ-rUO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果発表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2h-b8-FqH">
@@ -483,6 +483,9 @@
                                 <state key="normal" title="Topへ戻る">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="toTopButtonAction:" destination="Gs8-ah-JF9" eventType="touchUpInside" id="D6L-gc-pH6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkO-SR-K81">
                                 <rect key="frame" x="145" y="419" width="125" height="48"/>
@@ -507,9 +510,9 @@
         <!--Quiz View Controller-->
         <scene sceneID="rji-In-E0S">
             <objects>
-                <viewController id="5Pf-G3-RyJ" customClass="QuizViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5Pf-G3-RyJ" customClass="QuizViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SBt-xo-vPD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAX-W0-nX5">
@@ -519,7 +522,7 @@
                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65L-lc-tNS">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65L-lc-tNS">
                                 <rect key="frame" x="49" y="497" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -533,10 +536,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choiceAnswerWithSender:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="qOv-k4-fEf"/>
+                                    <action selector="btnActionWithSender:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="gnb-b5-DEc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHx-1t-KdL">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHx-1t-KdL">
                                 <rect key="frame" x="49" y="713" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -550,10 +553,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choiceAnswerWithSender:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="A2I-ch-aG8"/>
+                                    <action selector="btnActionWithSender:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="bJ7-LH-UOr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K66-5L-tgP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K66-5L-tgP">
                                 <rect key="frame" x="49" y="605" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -567,7 +570,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choiceAnswerWithSender:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="g2j-yd-a0u"/>
+                                    <action selector="btnActionWithSender:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="5h6-bz-EDZ"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYO-ZE-7H0">
@@ -577,9 +580,9 @@
                                 <attributedString key="attributedText">
                                     <fragment content="問題文">
                                         <attributes>
-                                            <color key="NSColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="3" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -590,31 +593,35 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwy-Rf-5ZE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一般的なショートカット" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwy-Rf-5ZE">
                                 <rect key="frame" x="4" y="110" width="406" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29411764705882354" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNI-rW-5Av">
+                                <rect key="frame" x="36" y="277" width="342" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4oA-TB-nyF"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="eTT-HP-rQ7"/>
                     <connections>
+                        <outlet property="hanteiImageView" destination="FNI-rW-5Av" id="cl0-bB-BDa"/>
                         <outlet property="numberLabel" destination="MAX-W0-nX5" id="mOT-n5-1a4"/>
                         <outlet property="sentakuButton1" destination="65L-lc-tNS" id="hUn-Lr-5UC"/>
                         <outlet property="sentakuButton2" destination="K66-5L-tgP" id="5Y5-pZ-gci"/>
                         <outlet property="sentakuButton3" destination="LHx-1t-KdL" id="Imk-f3-wcD"/>
                         <outlet property="sentenceTextView" destination="sYO-ZE-7H0" id="2gF-nq-hNG"/>
-                        <outlet property="titleLabel" destination="cwy-Rf-5ZE" id="uMO-j9-ghJ"/>
-                        <segue destination="Gs8-ah-JF9" kind="presentation" id="M6n-IN-rol"/>
+                        <segue destination="Gs8-ah-JF9" kind="presentation" identifier="toResult" modalPresentationStyle="fullScreen" id="eky-Xi-E4m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96b-u7-WRC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3232" y="-652"/>
+            <point key="canvasLocation" x="3231.884057971015" y="-652.23214285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aMl-as-byb">
@@ -638,7 +645,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="5Pf-G3-RyJ" kind="show" id="KI0-xH-Fin"/>
+                                    <segue destination="5Pf-G3-RyJ" kind="presentation" id="vJ1-rP-l3A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -740,8 +747,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="LJk-8O-x5y"/>
                     <connections>
-                        <outlet property="setsumeiLabel" destination="4m5-Im-CpX" id="K3u-dH-wiV"/>
-                        <outlet property="titleLabel" destination="gsl-XE-rjp" id="dUT-UC-ytU"/>
+                        <outlet property="setsumeiLabel" destination="4m5-Im-CpX" id="kSC-vf-ulC"/>
+                        <outlet property="titleLabel" destination="gsl-XE-rjp" id="BpL-hX-YkW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czl-ia-j3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -845,9 +852,9 @@
         <!--Quiz2 View Controller-->
         <scene sceneID="zKD-RQ-Xaq">
             <objects>
-                <viewController id="3PT-fr-2Gd" customClass="Quiz2ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="3PT-fr-2Gd" customClass="Quiz2ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KUs-TI-2cy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jy-xY-zA6">
@@ -857,7 +864,7 @@
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clA-hP-8pa">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clA-hP-8pa">
                                 <rect key="frame" x="49" y="497" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -871,10 +878,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choiceAnswerWithSender:" destination="3PT-fr-2Gd" eventType="touchUpInside" id="gkh-eF-2CT"/>
+                                    <action selector="btnActionWithSender:" destination="3PT-fr-2Gd" eventType="touchUpInside" id="I4Q-jl-Toa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-zn-39d">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-zn-39d">
                                 <rect key="frame" x="49" y="713" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -887,8 +894,11 @@
                                         <integer key="value" value="46"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnActionWithSender:" destination="3PT-fr-2Gd" eventType="touchUpInside" id="19u-02-JAr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Www-cr-47l">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Www-cr-47l">
                                 <rect key="frame" x="49" y="605" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -902,7 +912,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choiceAnswerWithSender:" destination="3PT-fr-2Gd" eventType="touchUpInside" id="ECx-Pf-H9J"/>
+                                    <action selector="btnActionWithSender:" destination="3PT-fr-2Gd" eventType="touchUpInside" id="gZH-y2-wy8"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-3e-o8q">
@@ -925,26 +935,31 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-aV-LI8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-aV-LI8">
                                 <rect key="frame" x="4" y="82" width="406" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">スリープ・ログアウト・システム終了に関するショートカット</string>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fvl-8s-0SN">
+                                <rect key="frame" x="36" y="277" width="342" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d2H-ob-PuB"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZA2-5H-nRb"/>
                     <connections>
+                        <outlet property="hanteiImageView" destination="Fvl-8s-0SN" id="Dbi-ng-JL5"/>
                         <outlet property="numberLabel" destination="1jy-xY-zA6" id="pcK-g8-txZ"/>
                         <outlet property="sentakuButton1" destination="clA-hP-8pa" id="O2z-bb-X89"/>
                         <outlet property="sentakuButton2" destination="Www-cr-47l" id="XqM-sS-mFT"/>
                         <outlet property="sentakuButton3" destination="5Te-zn-39d" id="S1n-TJ-bCG"/>
                         <outlet property="sentenceTextView" destination="d4G-3e-o8q" id="3bO-79-S6U"/>
-                        <outlet property="titleLabel" destination="UXT-aV-LI8" id="UXk-WT-GL5"/>
-                        <segue destination="Gs8-ah-JF9" kind="presentation" id="H47-9e-WDv"/>
+                        <segue destination="Gs8-ah-JF9" kind="presentation" identifier="toResult" modalPresentationStyle="fullScreen" id="H47-9e-WDv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csp-6K-ZDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -954,9 +969,9 @@
         <!--Quiz3 View Controller-->
         <scene sceneID="FX2-IL-tqF">
             <objects>
-                <viewController id="Afm-Px-Z5H" customClass="Quiz3ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Afm-Px-Z5H" customClass="Quiz3ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tSB-cv-mwT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSj-5H-Lne">
@@ -966,7 +981,7 @@
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu4-E2-LM7">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu4-E2-LM7">
                                 <rect key="frame" x="49" y="497" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -979,8 +994,11 @@
                                         <integer key="value" value="46"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnActionWithSender:" destination="Afm-Px-Z5H" eventType="touchUpInside" id="gec-2g-foa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-Cn-sfn">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-Cn-sfn">
                                 <rect key="frame" x="49" y="713" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -993,8 +1011,11 @@
                                         <integer key="value" value="46"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnActionWithSender:" destination="Afm-Px-Z5H" eventType="touchUpInside" id="2hq-5N-Yzd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5j-Wp-m2I">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5j-Wp-m2I">
                                 <rect key="frame" x="49" y="605" width="317" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.52156862749999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1007,6 +1028,9 @@
                                         <integer key="value" value="46"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnActionWithSender:" destination="Afm-Px-Z5H" eventType="touchUpInside" id="X2r-xu-sQB"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-cs-Guq">
                                 <rect key="frame" x="36" y="220" width="342" height="228"/>
@@ -1028,26 +1052,30 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-v3-1mh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="書類に関するショートカット" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-v3-1mh">
                                 <rect key="frame" x="4" y="110" width="406" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Qz-KP-3Hj">
+                                <rect key="frame" x="36" y="277" width="342" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Ov-h0-ODP"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ypc-4w-mTx"/>
                     <connections>
+                        <outlet property="hanteiImageView" destination="9Qz-KP-3Hj" id="fYA-PT-rfB"/>
                         <outlet property="numberLabel" destination="kSj-5H-Lne" id="wQ3-g7-SJV"/>
                         <outlet property="sentakuButton1" destination="Tu4-E2-LM7" id="BRG-6e-zXW"/>
                         <outlet property="sentakuButton2" destination="E5j-Wp-m2I" id="yN5-QS-RQ3"/>
                         <outlet property="sentakuButton3" destination="tgG-Cn-sfn" id="ENW-CP-WhB"/>
                         <outlet property="sentenceTextView" destination="kh9-cs-Guq" id="Z9e-fv-lT8"/>
-                        <outlet property="titleLabel" destination="pUX-v3-1mh" id="YS9-SX-O1G"/>
-                        <segue destination="Gs8-ah-JF9" kind="presentation" id="kGP-PD-Alo"/>
+                        <segue destination="Gs8-ah-JF9" kind="presentation" identifier="toResult" modalPresentationStyle="fullScreen" id="kGP-PD-Alo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rdj-uJ-IUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1076,7 +1104,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="3PT-fr-2Gd" kind="show" id="RVt-Ad-SFY"/>
+                                    <segue destination="3PT-fr-2Gd" kind="presentation" id="lTU-pR-lGV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1110,7 +1138,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Afm-Px-Z5H" kind="show" id="1Bg-SA-rfn"/>
+                                    <segue destination="Afm-Px-Z5H" kind="presentation" id="SJc-Ub-ebg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1208,8 +1236,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rvy-lp-gHO"/>
-        <segue reference="M6n-IN-rol"/>
+        <segue reference="rOJ-qZ-3p8"/>
+        <segue reference="kGP-PD-Alo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
