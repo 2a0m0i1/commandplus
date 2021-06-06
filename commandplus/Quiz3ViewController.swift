@@ -88,4 +88,10 @@ class Quiz3ViewController: UIViewController {
         }
         return csvArray
     }
+    
+    @IBAction func toQuiz(_ sender: Any) {
+        self.presentingViewController?
+            .presentingViewController?.dismiss(animated: true)
+    }
+
 }

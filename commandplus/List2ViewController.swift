@@ -48,5 +48,8 @@ class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // 別の画面に遷移
         performSegue(withIdentifier: "toNext", sender: nil)
     }
-    
+    @IBAction func toList(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
+    }
+
 }

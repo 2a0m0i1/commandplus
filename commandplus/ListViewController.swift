@@ -55,6 +55,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
 
-    
+    @IBAction func List(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
+    }
+
     
 }

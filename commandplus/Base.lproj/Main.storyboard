@@ -38,7 +38,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tapButton1" destination="3VH-0n-eAR" eventType="touchUpInside" id="0af-iO-wwV"/>
-                                    <segue destination="8GA-du-TF9" kind="presentation" id="yQj-Q6-wyD"/>
+                                    <segue destination="8GA-du-TF9" kind="presentation" modalPresentationStyle="fullScreen" id="yQj-Q6-wyD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me6-V6-FXF">
@@ -56,7 +56,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tapButton2" destination="3VH-0n-eAR" eventType="touchUpInside" id="zZi-Cu-kTm"/>
-                                    <segue destination="YRx-7Z-YjV" kind="presentation" id="ow8-Z1-ovj"/>
+                                    <segue destination="YRx-7Z-YjV" kind="presentation" modalPresentationStyle="fullScreen" id="ow8-Z1-ovj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXm-c8-H3d">
@@ -85,7 +85,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tapButton4" destination="3VH-0n-eAR" eventType="touchUpInside" id="mp5-ho-6EW"/>
-                                    <segue destination="9BH-gt-fav" kind="presentation" id="TlW-Vi-ifk"/>
+                                    <segue destination="9BH-gt-fav" kind="presentation" modalPresentationStyle="fullScreen" id="TlW-Vi-ifk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqz-Oq-nP0">
@@ -97,7 +97,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tapButton5" destination="3VH-0n-eAR" eventType="touchUpInside" id="uyD-xZ-jKE"/>
-                                    <segue destination="bR5-LG-rzz" kind="presentation" id="wEI-7B-LFp"/>
+                                    <segue destination="bR5-LG-rzz" kind="presentation" modalPresentationStyle="fullScreen" id="wEI-7B-LFp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,7 +117,7 @@
             <objects>
                 <viewController id="8GA-du-TF9" customClass="ListChooseViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="frN-cZ-Vt0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-cv-VsG">
@@ -134,7 +134,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="hhF-aL-tJa" kind="presentation" id="5Pq-lF-yZj"/>
+                                    <segue destination="hhF-aL-tJa" kind="presentation" modalPresentationStyle="fullScreen" id="5Pq-lF-yZj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DgX-n4-9XL">
@@ -160,7 +160,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="0Hi-Tw-xur" kind="presentation" id="nz6-LK-5X2"/>
+                                    <segue destination="0Hi-Tw-xur" kind="presentation" modalPresentationStyle="fullScreen" id="nz6-LK-5X2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一覧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfn-Yr-CEq">
@@ -184,7 +184,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="8dJ-MN-VUq" kind="presentation" id="ww0-5m-xxc"/>
+                                    <segue destination="8dJ-MN-VUq" kind="presentation" modalPresentationStyle="fullScreen" id="ww0-5m-xxc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPa-sm-Hdg">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="fLx-Kl-27S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -194,14 +205,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aP9-9S-UAB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="-2295"/>
+            <point key="canvasLocation" x="1528.985507246377" y="-2295.5357142857142"/>
         </scene>
         <!--Quiz Choose View Controller-->
         <scene sceneID="xrW-zn-kdr">
             <objects>
                 <viewController id="YRx-7Z-YjV" customClass="QuizChooseViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LRK-Yp-CwK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r46-ER-B7o">
@@ -234,7 +245,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="eCz-sz-7Ap" kind="presentation" id="rRi-Qr-rTt"/>
+                                    <segue destination="eCz-sz-7Ap" kind="presentation" modalPresentationStyle="fullScreen" id="rRi-Qr-rTt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmH-9V-829">
@@ -251,7 +262,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="vAm-7a-ooh" kind="presentation" id="JtD-FC-5ro"/>
+                                    <segue destination="vAm-7a-ooh" kind="presentation" modalPresentationStyle="fullScreen" id="JtD-FC-5ro"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="クイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ij-my-Ko0">
@@ -275,7 +286,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Ec7-ch-kJM" kind="presentation" id="44N-yH-aiq"/>
+                                    <segue destination="Ec7-ch-kJM" kind="presentation" modalPresentationStyle="fullScreen" id="44N-yH-aiq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmP-JQ-htb">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="B8W-t5-ai6"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="rdE-qO-YF0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -290,9 +313,9 @@
         <!--View Controller-->
         <scene sceneID="geB-uy-KVk">
             <objects>
-                <viewController id="9BH-gt-fav" sceneMemberID="viewController">
+                <viewController id="9BH-gt-fav" customClass="ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qTB-R5-dpe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-C4-ilK">
@@ -339,6 +362,17 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjN-f0-BhM">
+                                <rect key="frame" x="159" y="741" width="97" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="Topへ戻る">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toTop:" destination="9BH-gt-fav" eventType="touchUpInside" id="zo3-as-7bA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="grZ-DI-OCv"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -348,12 +382,12 @@
             </objects>
             <point key="canvasLocation" x="358" y="820"/>
         </scene>
-        <!--View Controller-->
+        <!--Mypage View Controller-->
         <scene sceneID="vsf-Rd-o2O">
             <objects>
-                <viewController id="bR5-LG-rzz" sceneMemberID="viewController">
+                <viewController id="bR5-LG-rzz" customClass="MypageViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zsa-hh-6tp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erf-Wy-c8f">
@@ -436,6 +470,9 @@
                                 <state key="normal" title="Topへ戻る">
                                     <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="toTop:" destination="bR5-LG-rzz" eventType="touchUpInside" id="4Lo-iJ-Mgr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vVu-h3-VO6"/>
@@ -573,7 +610,7 @@
                                     <action selector="btnActionWithSender:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="5h6-bz-EDZ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYO-ZE-7H0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYO-ZE-7H0">
                                 <rect key="frame" x="36" y="220" width="342" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -604,6 +641,20 @@
                                 <rect key="frame" x="36" y="277" width="342" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v5-sX-TZN">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toQuiz:" destination="5Pf-G3-RyJ" eventType="touchUpInside" id="e77-6d-bG6"/>
+                                    <action selector="toSentaku:" destination="Ec7-ch-kJM" eventType="touchUpInside" id="MoD-xQ-bI7"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="Mgl-cs-K4N"/>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="Xw9-rK-Sio"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4oA-TB-nyF"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -626,9 +677,9 @@
         <!--View Controller-->
         <scene sceneID="aMl-as-byb">
             <objects>
-                <viewController id="Ec7-ch-kJM" sceneMemberID="viewController">
+                <viewController id="Ec7-ch-kJM" customClass="ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBe-um-4Fd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMF-Kq-xwM">
@@ -648,6 +699,19 @@
                                     <segue destination="5Pf-G3-RyJ" kind="presentation" id="vJ1-rP-l3A"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGJ-A4-LUy">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toSentaku:" destination="Ec7-ch-kJM" eventType="touchUpInside" id="T45-Za-ZqI"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="k6u-Ct-sUn"/>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="wgu-6d-VAc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qsP-tX-VSt"/>
                         <color key="backgroundColor" red="0.85882352941176465" green="0.49803921568627452" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -662,11 +726,11 @@
             <objects>
                 <viewController id="hhF-aL-tJa" customClass="ListViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zsd-sg-zn9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h5S-ev-cdQ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="737"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -678,7 +742,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Wj2-Y8-K3I" kind="presentation" identifier="toNext" id="rOJ-qZ-3p8"/>
+                                            <segue destination="Wj2-Y8-K3I" kind="presentation" identifier="toNext" modalPresentationStyle="fullScreen" id="rOJ-qZ-3p8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -687,6 +751,18 @@
                                     <outlet property="delegate" destination="hhF-aL-tJa" id="cXI-aB-xwY"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqA-I6-jBk">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="List:" destination="hhF-aL-tJa" eventType="touchUpInside" id="TZh-if-lZO"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="tpI-he-Idv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WUh-3i-zxm"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -698,14 +774,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpE-49-8lY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877" y="-3015"/>
+            <point key="canvasLocation" x="2876.811594202899" y="-3015.4017857142858"/>
         </scene>
         <!--Setsumei View Controller-->
         <scene sceneID="0nZ-Xp-hHK">
             <objects>
                 <viewController id="Wj2-Y8-K3I" customClass="SetsumeiViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UVe-d4-haK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5j-vM-z3b">
@@ -741,6 +817,20 @@
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rw-Mw-fkw">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toListsentaku:" destination="Wj2-Y8-K3I" eventType="touchUpInside" id="UP6-Zg-7Wu"/>
+                                    <action selector="toSentaku:" destination="Ec7-ch-kJM" eventType="touchUpInside" id="Oum-h0-nxh"/>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="7e0-iE-Qe6"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="tvQ-D2-HXl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="baP-M8-Dhj"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -915,7 +1005,7 @@
                                     <action selector="btnActionWithSender:" destination="3PT-fr-2Gd" eventType="touchUpInside" id="gZH-y2-wy8"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-3e-o8q">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-3e-o8q">
                                 <rect key="frame" x="36" y="220" width="342" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -938,7 +1028,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-aV-LI8">
                                 <rect key="frame" x="4" y="82" width="406" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">スリープ・ログアウト・システム終了に関するショートカット</string>
+                                <string key="text">スリープ・ログアウト・システム終了に
+関するショートカット</string>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -947,6 +1038,20 @@
                                 <rect key="frame" x="36" y="277" width="342" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2U-wb-vR0">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toQuiz:" destination="3PT-fr-2Gd" eventType="touchUpInside" id="uaY-l8-0qV"/>
+                                    <action selector="toSentaku:" destination="Ec7-ch-kJM" eventType="touchUpInside" id="ZWs-r7-OuF"/>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="Q7A-I4-RAR"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="jaQ-Xq-Coj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d2H-ob-PuB"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1032,7 +1137,7 @@
                                     <action selector="btnActionWithSender:" destination="Afm-Px-Z5H" eventType="touchUpInside" id="X2r-xu-sQB"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-cs-Guq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-cs-Guq">
                                 <rect key="frame" x="36" y="220" width="342" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1063,6 +1168,20 @@
                                 <rect key="frame" x="36" y="277" width="342" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53r-uA-0xk">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toQuiz:" destination="Afm-Px-Z5H" eventType="touchUpInside" id="Z2v-9t-WRH"/>
+                                    <action selector="toSentaku:" destination="Ec7-ch-kJM" eventType="touchUpInside" id="ce0-Wo-o69"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="YB4-1H-t1X"/>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="eH6-7m-7gK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Ov-h0-ODP"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1085,9 +1204,9 @@
         <!--View Controller-->
         <scene sceneID="zP7-OR-7Dr">
             <objects>
-                <viewController id="eCz-sz-7Ap" sceneMemberID="viewController">
+                <viewController id="eCz-sz-7Ap" customClass="ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NUp-RX-tyu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTz-ua-m4E">
@@ -1107,6 +1226,19 @@
                                     <segue destination="3PT-fr-2Gd" kind="presentation" id="lTU-pR-lGV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2Q-A4-vPe">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toSentaku:" destination="eCz-sz-7Ap" eventType="touchUpInside" id="nV2-60-wIa"/>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="oaj-qi-OrT"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="uZb-xn-jlr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3s8-Qa-A4r"/>
                         <color key="backgroundColor" red="0.85882352939999995" green="0.49803921569999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1119,9 +1251,9 @@
         <!--View Controller-->
         <scene sceneID="xGa-Y6-tXb">
             <objects>
-                <viewController id="vAm-7a-ooh" sceneMemberID="viewController">
+                <viewController id="vAm-7a-ooh" customClass="ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MlA-b1-Jat">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98C-xV-rfh">
@@ -1141,6 +1273,19 @@
                                     <segue destination="Afm-Px-Z5H" kind="presentation" id="SJc-Ub-ebg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSx-NL-rhQ">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toSentaku:" destination="vAm-7a-ooh" eventType="touchUpInside" id="wGd-08-5Ot"/>
+                                    <action selector="toTop:" destination="YRx-7Z-YjV" eventType="touchUpInside" id="MFj-Z3-G9A"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="PVZ-XU-Bhs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9tc-FH-uIb"/>
                         <color key="backgroundColor" red="0.85882352939999995" green="0.49803921569999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1155,11 +1300,11 @@
             <objects>
                 <viewController id="0Hi-Tw-xur" customClass="List2ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xC0-Ur-Ist">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xP0-LV-xlZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="737"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -1171,7 +1316,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Wj2-Y8-K3I" kind="presentation" identifier="toNext" id="Ubn-8N-zn3"/>
+                                            <segue destination="Wj2-Y8-K3I" kind="presentation" identifier="toNext" modalPresentationStyle="fullScreen" id="Ubn-8N-zn3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1180,6 +1325,19 @@
                                     <outlet property="delegate" destination="0Hi-Tw-xur" id="5D3-pW-iNS"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmf-0s-gtf">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="List:" destination="hhF-aL-tJa" eventType="touchUpInside" id="OCO-0T-jSg"/>
+                                    <action selector="toList:" destination="0Hi-Tw-xur" eventType="touchUpInside" id="v1L-bx-gMB"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="uJh-6o-V7p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mu1-w6-D3R"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1190,18 +1348,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qk0-XP-yBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="-2295"/>
+            <point key="canvasLocation" x="2876.811594202899" y="-2295.5357142857142"/>
         </scene>
         <!--List3 View Controller-->
         <scene sceneID="opo-9w-jSS">
             <objects>
                 <viewController id="8dJ-MN-VUq" customClass="List3ViewController" customModule="commandplus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YXT-SX-eD3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="edP-uG-jZg">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="737"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -1213,7 +1371,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Wj2-Y8-K3I" kind="presentation" identifier="toNext" id="rvy-lp-gHO"/>
+                                            <segue destination="Wj2-Y8-K3I" kind="presentation" identifier="toNext" modalPresentationStyle="fullScreen" id="rvy-lp-gHO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1222,6 +1380,19 @@
                                     <outlet property="delegate" destination="8dJ-MN-VUq" id="X5T-49-MXD"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBl-vq-UCl">
+                                <rect key="frame" x="30" y="72" width="31" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="List:" destination="hhF-aL-tJa" eventType="touchUpInside" id="jXG-KZ-od9"/>
+                                    <action selector="toList:" destination="8dJ-MN-VUq" eventType="touchUpInside" id="GSY-2K-ipX"/>
+                                    <action selector="toTop:" destination="8GA-du-TF9" eventType="touchUpInside" id="Xzg-5Y-e6A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kWC-D4-jZH"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1232,11 +1403,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oix-Ic-aPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="-1564"/>
+            <point key="canvasLocation" x="2876.811594202899" y="-1564.2857142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rOJ-qZ-3p8"/>
+        <segue reference="rvy-lp-gHO"/>
         <segue reference="kGP-PD-Alo"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -14,6 +14,7 @@
 		E052E01B266A7DCE0045FFBB /* batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = E052E019266A7DCE0045FFBB /* batsu.png */; };
 		E052E021266A98E10045FFBB /* shisutemu.csv in Resources */ = {isa = PBXBuildFile; fileRef = E052E020266A98E10045FFBB /* shisutemu.csv */; };
 		E052E023266A98FD0045FFBB /* syorui.csv in Resources */ = {isa = PBXBuildFile; fileRef = E052E022266A98FD0045FFBB /* syorui.csv */; };
+		E0742A4C266BB7A100B69CCB /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0742A4B266BB7A100B69CCB /* MypageViewController.swift */; };
 		E07C132F2664CC4700A2C34A /* Quiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */; };
 		E07C13312664CC5A00A2C34A /* Quiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */; };
 		E07C13332666007D00A2C34A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C13322666007D00A2C34A /* ResultViewController.swift */; };
@@ -60,6 +61,7 @@
 		E052E019266A7DCE0045FFBB /* batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batsu.png; sourceTree = "<group>"; };
 		E052E020266A98E10045FFBB /* shisutemu.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = shisutemu.csv; sourceTree = "<group>"; };
 		E052E022266A98FD0045FFBB /* syorui.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = syorui.csv; sourceTree = "<group>"; };
+		E0742A4B266BB7A100B69CCB /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz2ViewController.swift; sourceTree = "<group>"; };
 		E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz3ViewController.swift; sourceTree = "<group>"; };
 		E07C13322666007D00A2C34A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */,
 				E07C13322666007D00A2C34A /* ResultViewController.swift */,
 				E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */,
+				E0742A4B266BB7A100B69CCB /* MypageViewController.swift */,
 				E052E017266A7DCE0045FFBB /* hantei */,
 				E052E010266A59CF0045FFBB /* ippan.csv */,
 				E052E020266A98E10045FFBB /* shisutemu.csv */,
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0742A4C266BB7A100B69CCB /* MypageViewController.swift in Sources */,
 				E087E5C7265E37B6008E7DD3 /* TopViewController.swift in Sources */,
 				E07C13312664CC5A00A2C34A /* Quiz3ViewController.swift in Sources */,
 				E087E5CB265EA386008E7DD3 /* ListChooseViewController.swift in Sources */,
@@ -514,7 +518,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = commandplus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,7 +540,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = commandplus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -17,5 +17,9 @@ class SetsumeiViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func toListsentaku(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
+    }
+
 
 }

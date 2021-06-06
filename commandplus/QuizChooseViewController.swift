@@ -8,11 +8,12 @@
 import UIKit
 
 class QuizChooseViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    @IBAction func toTop(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
     }
     
 }
