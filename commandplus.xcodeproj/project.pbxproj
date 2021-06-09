@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		E02729A326612ADD00FA6EA1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02729A226612ADD00FA6EA1 /* ListViewController.swift */; };
 		E02729A72661324100FA6EA1 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02729A62661324100FA6EA1 /* QuizViewController.swift */; };
+		E05195FE2670CFFD00B75922 /* 緑&ピンク.png in Resources */ = {isa = PBXBuildFile; fileRef = E05195FA2670CFFD00B75922 /* 緑&ピンク.png */; };
+		E05195FF2670CFFD00B75922 /* 紫&黄色.png in Resources */ = {isa = PBXBuildFile; fileRef = E05195FB2670CFFD00B75922 /* 紫&黄色.png */; };
+		E05196002670CFFD00B75922 /* 青&オレンジ.png in Resources */ = {isa = PBXBuildFile; fileRef = E05195FC2670CFFD00B75922 /* 青&オレンジ.png */; };
+		E05196012670CFFD00B75922 /* 黒&白.png in Resources */ = {isa = PBXBuildFile; fileRef = E05195FD2670CFFD00B75922 /* 黒&白.png */; };
 		E052E011266A59CF0045FFBB /* ippan.csv in Resources */ = {isa = PBXBuildFile; fileRef = E052E010266A59CF0045FFBB /* ippan.csv */; };
 		E052E01A266A7DCE0045FFBB /* maru.png in Resources */ = {isa = PBXBuildFile; fileRef = E052E018266A7DCE0045FFBB /* maru.png */; };
 		E052E01B266A7DCE0045FFBB /* batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = E052E019266A7DCE0045FFBB /* batsu.png */; };
@@ -56,6 +60,10 @@
 /* Begin PBXFileReference section */
 		E02729A226612ADD00FA6EA1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E02729A62661324100FA6EA1 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		E05195FA2670CFFD00B75922 /* 緑&ピンク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "緑&ピンク.png"; sourceTree = "<group>"; };
+		E05195FB2670CFFD00B75922 /* 紫&黄色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "紫&黄色.png"; sourceTree = "<group>"; };
+		E05195FC2670CFFD00B75922 /* 青&オレンジ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "青&オレンジ.png"; sourceTree = "<group>"; };
+		E05195FD2670CFFD00B75922 /* 黒&白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黒&白.png"; sourceTree = "<group>"; };
 		E052E010266A59CF0045FFBB /* ippan.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = ippan.csv; sourceTree = "<group>"; };
 		E052E018266A7DCE0045FFBB /* maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru.png; sourceTree = "<group>"; };
 		E052E019266A7DCE0045FFBB /* batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batsu.png; sourceTree = "<group>"; };
@@ -112,6 +120,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E05195F92670CFFD00B75922 /* kisekae */ = {
+			isa = PBXGroup;
+			children = (
+				E05195FA2670CFFD00B75922 /* 緑&ピンク.png */,
+				E05195FB2670CFFD00B75922 /* 紫&黄色.png */,
+				E05195FC2670CFFD00B75922 /* 青&オレンジ.png */,
+				E05195FD2670CFFD00B75922 /* 黒&白.png */,
+			);
+			path = kisekae;
+			sourceTree = SOURCE_ROOT;
+		};
 		E052E017266A7DCE0045FFBB /* hantei */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,29 +163,30 @@
 		E07D9EC32659FBB900F4485A /* commandplus */ = {
 			isa = PBXGroup;
 			children = (
-				E07D9ED22659FBBB00F4485A /* Info.plist */,
-				E07D9EC42659FBB900F4485A /* AppDelegate.swift */,
-				E07D9EC62659FBB900F4485A /* SceneDelegate.swift */,
-				E087E5C6265E37B6008E7DD3 /* TopViewController.swift */,
-				E07D9EC82659FBB900F4485A /* ViewController.swift */,
-				E07D9ECD2659FBBB00F4485A /* Assets.xcassets */,
-				E07D9ECF2659FBBB00F4485A /* LaunchScreen.storyboard */,
-				E07D9ECA2659FBB900F4485A /* Main.storyboard */,
-				E087E5CA265EA385008E7DD3 /* ListChooseViewController.swift */,
-				E02729A226612ADD00FA6EA1 /* ListViewController.swift */,
-				E07C1334266639A000A2C34A /* List2ViewController.swift */,
-				E07C1336266639B500A2C34A /* List3ViewController.swift */,
-				E087E5C8265E3AA7008E7DD3 /* QuizChooseViewController.swift */,
-				E02729A62661324100FA6EA1 /* QuizViewController.swift */,
-				E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */,
-				E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */,
-				E07C13322666007D00A2C34A /* ResultViewController.swift */,
-				E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */,
-				E0742A4B266BB7A100B69CCB /* MypageViewController.swift */,
-				E052E017266A7DCE0045FFBB /* hantei */,
 				E052E010266A59CF0045FFBB /* ippan.csv */,
 				E052E020266A98E10045FFBB /* shisutemu.csv */,
 				E052E022266A98FD0045FFBB /* syorui.csv */,
+				E07D9ED22659FBBB00F4485A /* Info.plist */,
+				E07D9EC42659FBB900F4485A /* AppDelegate.swift */,
+				E07C1334266639A000A2C34A /* List2ViewController.swift */,
+				E07C1336266639B500A2C34A /* List3ViewController.swift */,
+				E087E5CA265EA385008E7DD3 /* ListChooseViewController.swift */,
+				E02729A226612ADD00FA6EA1 /* ListViewController.swift */,
+				E0742A4B266BB7A100B69CCB /* MypageViewController.swift */,
+				E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */,
+				E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */,
+				E087E5C8265E3AA7008E7DD3 /* QuizChooseViewController.swift */,
+				E02729A62661324100FA6EA1 /* QuizViewController.swift */,
+				E07C13322666007D00A2C34A /* ResultViewController.swift */,
+				E07D9EC62659FBB900F4485A /* SceneDelegate.swift */,
+				E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */,
+				E087E5C6265E37B6008E7DD3 /* TopViewController.swift */,
+				E07D9EC82659FBB900F4485A /* ViewController.swift */,
+				E07D9ECD2659FBBB00F4485A /* Assets.xcassets */,
+				E052E017266A7DCE0045FFBB /* hantei */,
+				E05195F92670CFFD00B75922 /* kisekae */,
+				E07D9ECF2659FBBB00F4485A /* LaunchScreen.storyboard */,
+				E07D9ECA2659FBB900F4485A /* Main.storyboard */,
 			);
 			path = commandplus;
 			sourceTree = "<group>";
@@ -292,7 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05195FF2670CFFD00B75922 /* 紫&黄色.png in Resources */,
+				E05196002670CFFD00B75922 /* 青&オレンジ.png in Resources */,
 				E07D9ED12659FBBB00F4485A /* LaunchScreen.storyboard in Resources */,
+				E05196012670CFFD00B75922 /* 黒&白.png in Resources */,
 				E052E01A266A7DCE0045FFBB /* maru.png in Resources */,
 				E052E021266A98E10045FFBB /* shisutemu.csv in Resources */,
 				E07D9ECE2659FBBB00F4485A /* Assets.xcassets in Resources */,
@@ -300,6 +323,7 @@
 				E07D9ECC2659FBB900F4485A /* Main.storyboard in Resources */,
 				E052E011266A59CF0045FFBB /* ippan.csv in Resources */,
 				E052E023266A98FD0045FFBB /* syorui.csv in Resources */,
+				E05195FE2670CFFD00B75922 /* 緑&ピンク.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +542,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = commandplus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,7 +564,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = commandplus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

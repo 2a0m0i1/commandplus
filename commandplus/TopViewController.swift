@@ -31,5 +31,13 @@ class TopViewController: UIViewController {
         
     }
 
-    
+    let textColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
+        // ダークモードの場合
+        if traitCollection.userInterfaceStyle == .dark {
+            return .white
+        } else {
+            return .blue
+        }
+    }
+
 }
