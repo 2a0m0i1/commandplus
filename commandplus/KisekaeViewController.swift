@@ -1,24 +1,24 @@
 //
-//  MypageViewController.swift
+//  KisekaeViewController.swift
 //  commandplus
 //
-//  Created by 阿部亜未 on 2021/06/05.
+//  Created by 阿部亜未 on 2021/06/09.
 //
 
 import UIKit
 
-class MypageViewController: UIViewController {
-        
+class KisekaeViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
     @IBAction func toTop(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
-    
+
+
     /*
     // MARK: - Navigation
 

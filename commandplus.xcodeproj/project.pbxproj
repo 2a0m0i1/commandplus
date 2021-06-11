@@ -13,6 +13,7 @@
 		E05195FF2670CFFD00B75922 /* 紫&黄色.png in Resources */ = {isa = PBXBuildFile; fileRef = E05195FB2670CFFD00B75922 /* 紫&黄色.png */; };
 		E05196002670CFFD00B75922 /* 青&オレンジ.png in Resources */ = {isa = PBXBuildFile; fileRef = E05195FC2670CFFD00B75922 /* 青&オレンジ.png */; };
 		E05196012670CFFD00B75922 /* 黒&白.png in Resources */ = {isa = PBXBuildFile; fileRef = E05195FD2670CFFD00B75922 /* 黒&白.png */; };
+		E05196032670D45500B75922 /* KisekaeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05196022670D45500B75922 /* KisekaeViewController.swift */; };
 		E052E011266A59CF0045FFBB /* ippan.csv in Resources */ = {isa = PBXBuildFile; fileRef = E052E010266A59CF0045FFBB /* ippan.csv */; };
 		E052E01A266A7DCE0045FFBB /* maru.png in Resources */ = {isa = PBXBuildFile; fileRef = E052E018266A7DCE0045FFBB /* maru.png */; };
 		E052E01B266A7DCE0045FFBB /* batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = E052E019266A7DCE0045FFBB /* batsu.png */; };
@@ -64,6 +65,7 @@
 		E05195FB2670CFFD00B75922 /* 紫&黄色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "紫&黄色.png"; sourceTree = "<group>"; };
 		E05195FC2670CFFD00B75922 /* 青&オレンジ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "青&オレンジ.png"; sourceTree = "<group>"; };
 		E05195FD2670CFFD00B75922 /* 黒&白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黒&白.png"; sourceTree = "<group>"; };
+		E05196022670D45500B75922 /* KisekaeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisekaeViewController.swift; sourceTree = "<group>"; };
 		E052E010266A59CF0045FFBB /* ippan.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = ippan.csv; sourceTree = "<group>"; };
 		E052E018266A7DCE0045FFBB /* maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru.png; sourceTree = "<group>"; };
 		E052E019266A7DCE0045FFBB /* batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batsu.png; sourceTree = "<group>"; };
@@ -168,19 +170,20 @@
 				E052E022266A98FD0045FFBB /* syorui.csv */,
 				E07D9ED22659FBBB00F4485A /* Info.plist */,
 				E07D9EC42659FBB900F4485A /* AppDelegate.swift */,
-				E07C1334266639A000A2C34A /* List2ViewController.swift */,
-				E07C1336266639B500A2C34A /* List3ViewController.swift */,
+				E087E5C6265E37B6008E7DD3 /* TopViewController.swift */,
+				E0742A4B266BB7A100B69CCB /* MypageViewController.swift */,
 				E087E5CA265EA385008E7DD3 /* ListChooseViewController.swift */,
 				E02729A226612ADD00FA6EA1 /* ListViewController.swift */,
-				E0742A4B266BB7A100B69CCB /* MypageViewController.swift */,
-				E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */,
-				E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */,
+				E07C1334266639A000A2C34A /* List2ViewController.swift */,
+				E07C1336266639B500A2C34A /* List3ViewController.swift */,
 				E087E5C8265E3AA7008E7DD3 /* QuizChooseViewController.swift */,
 				E02729A62661324100FA6EA1 /* QuizViewController.swift */,
+				E07C132E2664CC4700A2C34A /* Quiz2ViewController.swift */,
+				E07C13302664CC5A00A2C34A /* Quiz3ViewController.swift */,
+				E05196022670D45500B75922 /* KisekaeViewController.swift */,
 				E07C13322666007D00A2C34A /* ResultViewController.swift */,
 				E07D9EC62659FBB900F4485A /* SceneDelegate.swift */,
 				E07C134126666EDA00A2C34A /* SetsumeiViewController.swift */,
-				E087E5C6265E37B6008E7DD3 /* TopViewController.swift */,
 				E07D9EC82659FBB900F4485A /* ViewController.swift */,
 				E07D9ECD2659FBBB00F4485A /* Assets.xcassets */,
 				E052E017266A7DCE0045FFBB /* hantei */,
@@ -350,6 +353,7 @@
 			files = (
 				E0742A4C266BB7A100B69CCB /* MypageViewController.swift in Sources */,
 				E087E5C7265E37B6008E7DD3 /* TopViewController.swift in Sources */,
+				E05196032670D45500B75922 /* KisekaeViewController.swift in Sources */,
 				E07C13312664CC5A00A2C34A /* Quiz3ViewController.swift in Sources */,
 				E087E5CB265EA386008E7DD3 /* ListChooseViewController.swift in Sources */,
 				E07D9EC92659FBB900F4485A /* ViewController.swift in Sources */,

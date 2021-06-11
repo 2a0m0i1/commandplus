@@ -13,9 +13,7 @@ class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //配列を設定
     let shisutemu = ["ディスプレイをスリープ", "強制的に再起動", "再起動", "システム終了", "画面をロック"]
-    
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

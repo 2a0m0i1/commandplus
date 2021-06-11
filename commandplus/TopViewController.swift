@@ -9,35 +9,25 @@ import UIKit
 
 class TopViewController: UIViewController {
     @IBOutlet var toplabel: UILabel!
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func tapButton1(){
-        
+
     }
     @IBAction func tapButton2(){
-        
+
     }
     @IBAction func tapButton3(){
-        
+
     }
     @IBAction func tapButton4(){
-        
+
     }
     @IBAction func tapButton5(){
-        
-    }
 
-    let textColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
-        // ダークモードの場合
-        if traitCollection.userInterfaceStyle == .dark {
-            return .white
-        } else {
-            return .blue
-        }
     }
 
 }
