@@ -11,6 +11,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var TableView: UITableView!
     
+    var indexNum = 0
+    var num = Int()
     
     //配列を設定
     let ippan = ["切り取り", "コピー", "ペースト", "取り消し", "全てを選択","項目を検索","印刷","保存","新しいタブ","ウィンドウを閉じる","Appを強制終了","Spotlightの表示・非表示","Appをフルスクリーン表示","プレビュー","Appの切り替え","スクリーンショット・画面録画","新しいフォルダ"]
@@ -20,10 +22,12 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func byPerformSegue(_ sender: Any) {
         self.performSegue(withIdentifier: "toSegueViewController", sender: nil)
     }
-        
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        // 常にライトモード（明るい外観）を指定することでダークモード適用を回避
+        self.overrideUserInterfaceStyle = .light
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,21 +45,25 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "samplecell", for: indexPath)
         // セルに表示する値を設定する
         cell.textLabel!.text = ippan[indexPath.row]
-
+        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // セルの選択を解除
+        // print(indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        // 別の画面に遷移
-        performSegue(withIdentifier: "toNext", sender: nil)
-        
+        num = indexPath.row
+        self.performSegue(withIdentifier: "toNext", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if (segue.identifier == "toNext") {
+            let nextVC = segue.destination as! SetsumeiViewController
+            nextVC.num = self.num
+            print(num)
+        }
+    }
     
     
     @IBAction func List(_ sender: Any) {

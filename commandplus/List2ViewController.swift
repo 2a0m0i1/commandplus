@@ -11,12 +11,16 @@ class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var TableView: UITableView!
     
+    var indexNum = 0
+    var num = Int()
+    
     //配列を設定
     let shisutemu = ["ディスプレイをスリープ", "強制的に再起動", "再起動", "システム終了", "画面をロック"]
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // 常にライトモード（明るい外観）を指定することでダークモード適用を回避
+                self.overrideUserInterfaceStyle = .light
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,13 +43,20 @@ class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // セルの選択を解除
+        // print(indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        // 別の画面に遷移
-        performSegue(withIdentifier: "toNext", sender: nil)
+        num = indexPath.row
+        self.performSegue(withIdentifier: "toNext", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if (segue.identifier == "toNext") {
+            let nextVC = segue.destination as! Setsumei2ViewController
+            nextVC.num = self.num
+            print(num)
+        }
+    }
+    
     @IBAction func toList(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
