@@ -39,6 +39,10 @@
 		E087E5C7265E37B6008E7DD3 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087E5C6265E37B6008E7DD3 /* TopViewController.swift */; };
 		E087E5C9265E3AA7008E7DD3 /* QuizChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087E5C8265E3AA7008E7DD3 /* QuizChooseViewController.swift */; };
 		E087E5CB265EA386008E7DD3 /* ListChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087E5CA265EA385008E7DD3 /* ListChooseViewController.swift */; };
+		E0E376812677C8D300A05E4C /* setsumei.csv in Resources */ = {isa = PBXBuildFile; fileRef = E0E376802677C8D300A05E4C /* setsumei.csv */; };
+		E0E376832678815C00A05E4C /* UIcolor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E376822678815C00A05E4C /* UIcolor+.swift */; };
+		E0E376872678887B00A05E4C /* setsumei2.csv in Resources */ = {isa = PBXBuildFile; fileRef = E0E376862678887B00A05E4C /* setsumei2.csv */; };
+		E0E376892678889100A05E4C /* setsumei3.csv in Resources */ = {isa = PBXBuildFile; fileRef = E0E376882678889100A05E4C /* setsumei3.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,10 @@
 		E087E5C6265E37B6008E7DD3 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		E087E5C8265E3AA7008E7DD3 /* QuizChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizChooseViewController.swift; sourceTree = "<group>"; };
 		E087E5CA265EA385008E7DD3 /* ListChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChooseViewController.swift; sourceTree = "<group>"; };
+		E0E376802677C8D300A05E4C /* setsumei.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = setsumei.csv; sourceTree = "<group>"; };
+		E0E376822678815C00A05E4C /* UIcolor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+.swift"; sourceTree = "<group>"; };
+		E0E376862678887B00A05E4C /* setsumei2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = setsumei2.csv; sourceTree = "<group>"; };
+		E0E376882678889100A05E4C /* setsumei3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = setsumei3.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,9 @@
 				E052E010266A59CF0045FFBB /* ippan.csv */,
 				E052E020266A98E10045FFBB /* shisutemu.csv */,
 				E052E022266A98FD0045FFBB /* syorui.csv */,
+				E0E376802677C8D300A05E4C /* setsumei.csv */,
+				E0E376862678887B00A05E4C /* setsumei2.csv */,
+				E0E376882678889100A05E4C /* setsumei3.csv */,
 				E07D9ED22659FBBB00F4485A /* Info.plist */,
 				E07D9EC42659FBB900F4485A /* AppDelegate.swift */,
 				E087E5C6265E37B6008E7DD3 /* TopViewController.swift */,
@@ -194,6 +205,7 @@
 				E07D9ECD2659FBBB00F4485A /* Assets.xcassets */,
 				E052E017266A7DCE0045FFBB /* hantei */,
 				E05195F92670CFFD00B75922 /* kisekae */,
+				E0E376822678815C00A05E4C /* UIcolor+.swift */,
 			);
 			path = commandplus;
 			sourceTree = "<group>";
@@ -329,7 +341,10 @@
 				E052E01B266A7DCE0045FFBB /* batsu.png in Resources */,
 				E07D9ECC2659FBB900F4485A /* Main.storyboard in Resources */,
 				E052E011266A59CF0045FFBB /* ippan.csv in Resources */,
+				E0E376892678889100A05E4C /* setsumei3.csv in Resources */,
 				E052E023266A98FD0045FFBB /* syorui.csv in Resources */,
+				E0E376812677C8D300A05E4C /* setsumei.csv in Resources */,
+				E0E376872678887B00A05E4C /* setsumei2.csv in Resources */,
 				E05195FE2670CFFD00B75922 /* 緑&ピンク.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +386,7 @@
 				E07C1335266639A000A2C34A /* List2ViewController.swift in Sources */,
 				E07C1337266639B500A2C34A /* List3ViewController.swift in Sources */,
 				E0672E262675DB130055966C /* Setsumei3ViewController.swift in Sources */,
+				E0E376832678815C00A05E4C /* UIcolor+.swift in Sources */,
 				E07C132F2664CC4700A2C34A /* Quiz2ViewController.swift in Sources */,
 				E07C13332666007D00A2C34A /* ResultViewController.swift in Sources */,
 			);

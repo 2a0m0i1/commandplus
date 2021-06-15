@@ -18,15 +18,16 @@ class List2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     let shisutemu = ["ディスプレイをスリープ", "強制的に再起動", "再起動", "システム終了", "画面をロック"]
         
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // 常にライトモード（明るい外観）を指定することでダークモード適用を回避
+        // ダークモード適用を回避
                 self.overrideUserInterfaceStyle = .light
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shisutemu.count

@@ -30,7 +30,7 @@ class QuizViewController: UIViewController {
         quizArray = csvArray[quizCount].components(separatedBy: ",")
         
         updateView()
-        
+                
     }
     
     

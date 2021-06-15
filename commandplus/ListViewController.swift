@@ -15,18 +15,12 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     var num = Int()
     
     //配列を設定
-    let ippan = ["切り取り", "コピー", "ペースト", "取り消し", "全てを選択","項目を検索","印刷","保存","新しいタブ","ウィンドウを閉じる","Appを強制終了","Spotlightの表示・非表示","Appをフルスクリーン表示","プレビュー","Appの切り替え","スクリーンショット・画面録画","新しいフォルダ"]
-    
-    
-    
-    @IBAction func byPerformSegue(_ sender: Any) {
-        self.performSegue(withIdentifier: "toSegueViewController", sender: nil)
-    }
+    let ippan = ["コピー", "ペースト", "切り取り", "取り消し", "全てを選択","項目を検索","印刷","保存","新しいタブ","ウィンドウを閉じる","Appを強制終了","Spotlightの表示・非表示","Appをフルスクリーン表示","プレビュー","Appの切り替え","スクリーンショット・画面録画","新しいフォルダ"]
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        // 常にライトモード（明るい外観）を指定することでダークモード適用を回避
+        // ダークモード適用を回避
         self.overrideUserInterfaceStyle = .light
     }
     

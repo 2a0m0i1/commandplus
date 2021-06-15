@@ -9,24 +9,19 @@ import UIKit
 
 class KisekaeViewController: UIViewController {
     
+    @IBOutlet var kisekaeButton: UIButton!
+    @IBOutlet var kisekae2Button: UIButton!
+    @IBOutlet var kisekae3Button: UIButton!
+    @IBOutlet var kisekae4Button: UIButton!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+//        kisekaeButton.buttonColor = UIColor.rgba(red: 127, green: 133, blue: 99, alpha: 1.0)
 
-        // Do any additional setup after loading the view.
+
     }
     @IBAction func toTop(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
